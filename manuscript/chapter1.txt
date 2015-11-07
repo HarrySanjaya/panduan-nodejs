@@ -1,0 +1,5 @@
+# Bab 1 
+Dasar-Dasar Node
+
+Dalam bab ini akan dibahas dasar-dasar Node meliputi pemahaman tentang apa itu Node, 
+mengapa Node diciptakan dan prinsip kerja Node.
