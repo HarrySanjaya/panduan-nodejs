@@ -1,5 +1,24 @@
 # Bab 1 
 Dasar-Dasar Node
 
-Dalam bab ini akan dibahas dasar-dasar Node meliputi pemahaman tentang apa itu Node, 
-mengapa Node diciptakan dan prinsip kerja Node.
+Dalam bab ini akan dibahas dasar-dasar Node meliputi 
+* Pemahaman tentang apa itu Node
+* Paparan tentang event loop Node dan alasan di balik I/O asinkron
+* Memahami context switch dengan contoh dalam V8 dan Node
+
+## Tentang Node
+Node -- atau Node.js -- adalah kerangka kerja *(framework)* yang dikendalikan oleh kejadian I/O (input/output) untuk
+mesin JavaScript V8. Node.js memungkinkan JavaScript untuk dijalankan di sisi server, dan dan memanfaatkan kehebatan
+mesin JavaScript V8 yang cepat, yang dibuat oleh Google untuk peramban Chrome.
+
+Filosofi dasar dari node.js adalah:
+* **I/O yang tidak tertahan**. Setiap pemanggilan I/O harus memiliki *callback* (fungsi yang dipanggil ketika proses I/O
+  telah selesai/siap), segera setelah selesai memdapatkan informasi dari disk, jaringan atau proses lain.
+* **Memiliki dukungan yang sudah tertanam terhadap protokol-protokol paling penting** (HTTP, DNS, TLS).
+* **Tingkat-dasar**. Tidak menghapus fungsi yang sudah ada di lapisan POSIX. Sebagai contoh, dukungan sambungan TCP
+  setengah-tutup.
+* **Semuanya Stream**; tidak pernah pemaksa untuk mem-buffer data.
+
+Node.js berbeda dengan JavaScript sisi-klien dengan menghapus beberapa fungsi, seperti manipulasi DOM, dan penambahan
+dukungan untuk penanganan kejadian pada I/O, proses, stream, HTTP, SSL, DNS, string dan pemprosesan buffer serta
+*addons* C/C++.
